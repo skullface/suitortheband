@@ -1,0 +1,8 @@
+<svg width="1000" height="575" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="photo tape">
+  <defs>
+    <mask id="MaskTape">
+      <image width="1000" height="575" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/tape.5dc941ea.png"></image>
+    </mask>
+  </defs>
+  <image width="1000" height="575" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/tape.892764d4.jpg" style="mask: url(&quot;#MaskTape&quot;)"></image>
+</svg>

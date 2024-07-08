@@ -1,40 +1,25 @@
-class ItemDropShadowHover {
-  constructor() {
-    this.offset = 0.1
-  }
+function wrapEveryOtherLetter() {
+  const headings = document.querySelectorAll('h1, h2')
 
-  move() {
-    const merchLinks = document.querySelectorAll('.merch-link')
-    merchLinks.forEach(merchLink => {
-      const item = merchLink.querySelector('.item')
-      const shadow = merchLink.querySelector('.shadow')
-      item.addEventListener('mousemove', e => this.calc(e, shadow))
-    })
-  }
+  headings.forEach(heading => {
+    let newContent = ''
+    const text = heading.textContent
+    heading.setAttribute('aria-label', text)
 
-  px = value => `${value}px`
+    for (let i = 0; i < text.length; i++) {
+      if (i % 3 === 2) {
+        newContent += `<span class='n3'>${text[i]}</span>`
+      } else if (i % 3 === 1) {
+        newContent += `<span class='n2'>${text[i]}</span>`
+      } else {
+        newContent += text[i]
+      }
+    }
 
-  calc = (e, shadow) => {
-    const { offsetX, offsetY, currentTarget } = e
-    const rect = currentTarget.getBoundingClientRect()
-    const { width: offsetWidth, height: offsetHeight } = rect
-    const { offset } = this
-
-    const x = ((offsetWidth / 2 - offsetX) * offset) / 2
-    const y = ((offsetHeight / 2 - offsetY) * offset) / 2
-
-    const h = this.px(x)
-    const w = this.px(y)
-
-    shadow.style.transform = `translate(${h}, ${w})`
-  }
-
-  init() {
-    this.move()
-  }
+    heading.innerHTML = newContent
+  })
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const instance = new ItemDropShadowHover()
-  instance.init()
+  wrapEveryOtherLetter()
 })
