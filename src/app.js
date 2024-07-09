@@ -12,7 +12,7 @@ function wrapEveryOtherLetter() {
       } else if (i % 3 === 1) {
         newContent += `<span class='n2'>${text[i]}</span>`
       } else {
-        newContent += text[i]
+        newContent += `<span class='n1'>${text[i]}</span>`
       }
     }
 
