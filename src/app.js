@@ -23,3 +23,19 @@ function wrapEveryOtherLetter() {
 document.addEventListener('DOMContentLoaded', () => {
   wrapEveryOtherLetter()
 })
+
+window.addEventListener('load', (event) => {
+  document.querySelectorAll('a').forEach(item => {
+    item.addEventListener('click', event => {
+      let linkUrl = new URL(item.getAttribute('href'), window.location.href)
+      let currentHostname = window.location.hostname
+ 
+      if (linkUrl.hostname !== currentHostname) {
+        let domainParts = linkUrl.hostname.split('.')
+        let domainName = domainParts.length > 1 ? domainParts[domainParts.length - 2] : domainParts[0]
+ 
+        fathom.trackEvent(`External link clicked: ${domainName}`)
+      }
+    })
+  })
+})
