@@ -104,24 +104,27 @@ section:nth-child(3n+3):hover {
   background-color: yellow;
 }
 
-section.music:hover {
-  background-color: yellow !important;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
-}
-
-section.music a:hover {
-  color: black;
-}
-
-h1, h2, h3, .head {
-  font-family:  "Helvetica", "Arial", sans-serif;
-}
-
 .suitor {
   color: #fff;
   background: #f9313e url('./images/texture.png') !important;
 }
 
+.music.bandcamp a {
+  color: black !important;
+}
+
+.music:hover {
+  background-color: yellow !important;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.music a:hover {
+  color: black;
+}
+
+h1, h2 {
+  font-family:  "Helvetica", "Arial", sans-serif;
+}
 
 h1 {
   font-size: 2.25rem;
@@ -152,6 +155,10 @@ h1 span {
   h1 {
     font-size: 4rem;
   }
+}
+
+h1 span:last-of-type {
+  letter-spacing: 0;
 }
 
 h2 {
@@ -206,10 +213,6 @@ a:focus {
 
 .portrait-last img {
   right: 50%;
-}
-
-.music.light a {
-  color: black !important;
 }
 
 .music a {
