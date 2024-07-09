@@ -110,11 +110,11 @@ section:nth-child(3n+3):hover {
 }
 
 .music.bandcamp a {
-  color: black !important;
+  color: black;
 }
 
 .music:hover {
-  background-color: yellow !important;
+  background-color: yellow;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
