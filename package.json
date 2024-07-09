@@ -3,8 +3,12 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "parcel-clean": "rm -rf .parcel-cache && rm -rf docs && mkdir docs",
+    "build-static": "parcel build src/static/* --no-cache --dist-dir docs",
+    "cname": "echo 'suitor.band' >> docs/CNAME",
+    "init": "npm run parcel-clean && npm run build-static && npm run cname",
+    "start": "npm run init && parcel src/index.html --dist-dir docs",
+    "build": "npm run init && parcel build src/index.html --dist-dir docs"
   },
   "devDependencies": {
     "parcel": "latest"
