@@ -243,12 +243,33 @@ section.music {
   }  
 }
 
+.merch {
+  display: relative;
+}
+
+.merch div {
+  visibility: hidden;
+  position: absolute;
+  display: inline-block;
+  color: #fff;
+}
+
+.merch span {
+  background-color: #000;
+  line-height: 1;
+  padding: 1px 6px;
+}
+
 .merch:hover,
 .merch:focus {
   background-color: #ccc;
   
   img  {
     filter: invert(1) saturate(0);
+  }
+  
+  div {
+    visibility: visible;
   }
 }
 
@@ -284,6 +305,7 @@ dt, dd {
 dt {
   width: 5rem;
   text-align: right;
+  text-transform: uppercase;
 }
 
 dt:after {
