@@ -3,7 +3,7 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "parcel-clean": "rm -rf .parcel-cache && rm -rf docs && mkdir docs",
+    "parcel-clean": "rm -rf .parcel-cache && rm -rf dist && rm -rf docs && mkdir docs",
     "build-static": "parcel build src/static/* --no-cache --dist-dir docs",
     "cname": "echo 'suitor.band' >> docs/CNAME",
     "init": "npm run parcel-clean && npm run build-static && npm run cname",
