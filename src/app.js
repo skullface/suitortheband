@@ -1,5 +1,5 @@
 function wrapEveryOtherLetter() {
-  const headings = document.querySelectorAll('h1, h2')
+  const headings = document.querySelectorAll('h1, h2, .h2')
 
   headings.forEach(heading => {
     let newContent = ''
