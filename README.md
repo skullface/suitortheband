@@ -12,5 +12,6 @@ all rights reserved to suitor the band and skullface 🤟
   - styling: custom CSS 🖌️
   - hosting: [gh-pages](https://pages.github.com/) 🐙🐱
   - photos: belong to their respective owners
+  - video: also by me 🙆🏻‍♀️
 - local dev: `npm run start`
 - prod build: `npm run build`
