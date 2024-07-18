@@ -3,7 +3,7 @@
 # [suitor.band](https://suitor.band)
 
 this repo is public for reference, not for you to copy &hearts;\
-all rights reserved to suitor the band and skullface 🤟
+all rights reserved to suitor n skullface 🤟
 
 ### technical stuff
 
@@ -15,3 +15,4 @@ all rights reserved to suitor the band and skullface 🤟
   - video: also by me 🙆🏻‍♀️
 - local dev: `npm run start`
 - prod build: `npm run build`
+  -  builds to the `/docs` directory so github pages can host it without any finnicky config
