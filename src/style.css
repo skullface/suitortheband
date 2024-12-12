@@ -1,15 +1,19 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 /*
   2. Remove default margin
 */
 * {
   margin: 0;
 }
+
 /*
   Typographic tweaks!
   3. Add accessible line-height
@@ -19,29 +23,48 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
 /*
   5. Improve media defaults
 */
-img, picture, video, canvas, svg, image {
+img,
+picture,
+video,
+canvas,
+svg,
+image {
   display: block;
   max-width: 100%;
 }
+
 /*
   6. Remove built-in form typography styles
 */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
+
 /*
   7. Avoid text overflows
 */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
+
 /*
   8. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -122,8 +145,14 @@ section:nth-child(3n+3):hover {
   color: black;
 }
 
-h1, h2, .h2 {
-  font-family:  "Helvetica", "Arial", sans-serif;
+.music img {
+  width: 60%;
+}
+
+h1,
+h2,
+.h2 {
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 h1 {
@@ -166,7 +195,8 @@ h2 span:last-of-type,
   letter-spacing: 0;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   text-transform: lowercase;
   font-weight: bold;
   line-height: 100%;
@@ -175,16 +205,19 @@ h2, .h2 {
   margin-bottom: 1rem;
 }
 
-h2 span, .h2 span {
+h2 span,
+.h2 span {
   position: relative;
 }
 
-h2 span.n2, .h2 span.n2 {
+h2 span.n2,
+.h2 span.n2 {
   top: -2px;
 }
 
 
-h2 span.n3, .h2 span.n3 {
+h2 span.n3,
+.h2 span.n3 {
   top: -4px;
 }
 
@@ -239,10 +272,20 @@ section.music {
   height: 4rem;
 }
 
+@media screen and (min-width: 1000px) {
+  .music span {
+    margin-top: 1rem;
+  }
+}
+
+.music span {
+  margin-top: 0.5rem;
+}
+
 @media screen and (max-width: 1000px) {
   .merch {
     padding: 0rem;
-  }  
+  }
 }
 
 .merch {
@@ -265,11 +308,11 @@ section.music {
 .merch:hover,
 .merch:focus {
   background-color: #ccc;
-  
-  img  {
+
+  img {
     filter: invert(1) saturate(0);
   }
-  
+
   div {
     visibility: visible;
   }
@@ -300,7 +343,8 @@ section.music {
   text-align: left;
 }
 
-dt, dd {
+dt,
+dd {
   display: inline-block;
 }
 
