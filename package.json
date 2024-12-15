@@ -11,6 +11,7 @@
     "build": "npm run init && parcel build src/index.html --dist-dir docs"
   },
   "devDependencies": {
-    "parcel": "latest"
+    "parcel": "latest",
+    "svgo": "^3.3.2"
   }
 }
