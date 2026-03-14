@@ -274,6 +274,10 @@ section.album {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 
+.press img {
+  margin-bottom: 0.5rem;
+}
+
 .music svg {
   width: 4rem;
   height: 4rem;
@@ -312,6 +316,7 @@ section.album {
 }
 
 .video span {
+  display: inline-block;
   background-color: #000;
   line-height: 1;
   padding: 1px 6px;
