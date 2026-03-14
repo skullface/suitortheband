@@ -11,8 +11,7 @@ all rights reserved to suitor n skullface 🤟
   - build: [parcel](https://parceljs.org/) 📦
   - styling: custom CSS 🖌️
   - hosting: [gh-pages](https://pages.github.com/) 🐙🐱
-  - photos: belong to their respective owners
-  - video: also by me 🙆🏻‍♀️
-- local dev: `npm run start`
-- prod build: `npm run build`
+  - media: belong to their respective owners
+- local dev: `pnpm run start`
+- prod build: `pnpm run build`
   -  builds to the `/docs` directory so github pages can host it without any finnicky config
