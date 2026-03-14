@@ -288,7 +288,6 @@ section.music {
 }
 
 .merch div {
-  visibility: hidden;
   position: absolute;
   display: inline-block;
   color: #fff;
@@ -304,12 +303,8 @@ section.music {
 .merch:focus {
   background-color: #ccc;
 
-  img {
+  video {
     filter: invert(1) saturate(0);
-  }
-
-  div {
-    visibility: visible;
   }
 }
 
